@@ -1,11 +1,19 @@
+# Python
 .venv/
-.env
-chroma/
 __pycache__/
 *.pyc
-.DS_Store
-keys.env
-node_modules/
-dist/
+
+# Environment
 *.env
 *.env.*
+
+# Data & model outputs (too large for git — see README for dataset source)
+data/
+outputs/
+
+# Node
+node_modules/
+dist/
+
+# Misc
+.DS_Store
