@@ -7,14 +7,14 @@ from sklearn.metrics import accuracy_score, classification_report, confusion_mat
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-from preprocess import clean_text
-from model import train_model
+from ml.preprocess import clean_text
+from ml.train.model import train_model
 
 # ===============================
 # 1. LOAD DATA
 # ===============================
-fake = pd.read_csv("../data/Fake.csv")
-real = pd.read_csv("../data/True.csv")
+fake = pd.read_csv("data/Fake.csv")
+real = pd.read_csv("data/True.csv")
 
 fake["label"] = 0
 real["label"] = 1
@@ -68,7 +68,7 @@ plt.show()
 # ===============================
 # 8. SAVE MODEL & VECTORIZER
 # ===============================
-joblib.dump(model, "../outputs/model.pkl")
-joblib.dump(vectorizer, "../outputs/vectorizer.pkl")
+joblib.dump(model, "outputs/model.pkl")
+joblib.dump(vectorizer, "outputs/vectorizer.pkl")
 
-print("Model and vectorizer saved in ../outputs/")
+print("Model and vectorizer saved in outputs/")
