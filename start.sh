@@ -11,7 +11,6 @@ fi
 # train model if outputs don't exist yet
 if [ ! -f "outputs/model.pkl" ]; then
   echo "Model not found — training now..."
-  mkdir -p outputs
   python -m ml.train.main
 fi
 
