@@ -8,8 +8,9 @@ __pycache__/
 *.env.*
 
 # Data & model outputs (too large for git — see README for dataset source)
-data/
-outputs/
+data/*
+outputs/*
+!**/.gitkeep
 
 # Node
 node_modules/
