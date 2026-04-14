@@ -2,6 +2,8 @@
 
 Detects whether a news article is **FAKE** or **REAL** using NLP and machine learning.
 
+<img src=".github/assets/screenshot.png" width="800" alt="App Screenshot" />
+
 ---
 
 ## Dataset
